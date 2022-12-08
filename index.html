@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>online quiz</title>
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/lib/style.css" />
+    <script src="static/js/lib/cute-alert.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a id="introduce" href="https://github.com/yazdani1994" target="_blank"
+        >Github ---> yazdani1994</a
+      >
+      <div class="score-wrapper hide">
+        <h3>امتیاز : <span id="score">0</span></h3>
+      </div>
+      <div class="timer-wrapper hide">
+        <canvas id="canvas" width="100" height="100"></canvas>
+        <span id="timing"></span>
+      </div>
+      <div id="question-wrapper" class="hide">
+        <strong class="question variable" id="var1">Z</strong>
+        <strong class="question operator" id="operator1">×</strong>
+        <strong class="question variable" id="var2">Y</strong>
+        <strong class="question operator" id="operator2">=</strong>
+        <strong class="question variable" id="var3">D</strong>
+      </div>
+      <div id="answer-wrapper" class="hide">
+        <strong class="answer" id="correct">درسته</strong>
+        <strong class="answer" id="wrong">غلطه</strong>
+      </div>
+      <strong id="load-game">شروع</strong>
+    </div>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
